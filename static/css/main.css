@@ -1,0 +1,126 @@
+body {
+    padding-top: 60px; 
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+}
+
+
+.wrap {
+    margin: 0 auto; 
+    display: block;
+}
+
+.w {
+    width: 960px; 
+}
+
+
+.wide-bgcolor {
+    background-color: #1296db;
+}
+
+.m-current-item {
+    background-color: rgba(0, 0, 0, 0.2); 
+    color: darkorange;
+}
+
+.m-enter-item {
+    background-color: rgba(0, 0, 0, 0.2); 
+    color: darkorange;
+}
+
+
+@media \0screen\,screen\9 {/* 只支持IE6、7、8 */
+.demo{
+    background-color:#000000;
+    filter:Alpha(opacity=50);
+    position:static; /* IE6、7、8只能设置position:static(默认属性) ，否则会导致子元素继承Alpha值 */
+    *zoom:1; /* 激活IE6、7的haslayout属性，让它读懂Alpha */
+}
+.demo p{
+    position: relative;/* 设置子元素为相对定位，可让子元素不继承Alpha值 */
+}  
+}
+
+
+.navbar {
+    height: 60px;
+    /*
+    color: #FB7A4F;
+    专注于心 专业于行
+    */
+
+    background-image: url(../img/nimbus-hero_grey.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 30%;
+}
+
+.m-collapse {
+    float: right;
+    text-align: center;
+    width: 500px;
+    color: #ffffff;
+    line-height: 60px;
+}
+
+.m-nav-logo {
+    float: left;
+    width: 150px;
+    height: 100%;
+}
+
+
+
+
+.big-title {
+    margin:0 auto; 
+    padding: 20px 0; 
+    text-align: center;
+}
+
+.itbox {
+    padding-bottom: 30px; 
+    /*
+    background: linear-gradient(-185deg,rgba(245,245,245,1) 50%,#fff 50%);
+    background: linear-gradient(185deg,#fff 50%,rgba(245,245,245,1) 50%);
+    */
+    background-image: url(https://confidentcustomer.com/img/site/How_it_works_bg.png);
+    background-color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.business-show-left{
+    float: left;
+    width: 50%;
+    overflow: hidden;
+}
+.business-show-right {
+	float: right;
+    width: 50%;
+    overflow: hidden;
+}
+.tin {
+    text-align: center;
+    padding-bottom: 20px; 
+    color: #666666;
+}
+.tin h4{
+    color: black;
+    line-height: 30px; 
+    padding-bottom: 10px; 
+}
+.tin-desc {
+    /* background-color: #f5f5f5; */
+    margin: 10px; 
+    padding: 5px 0;
+}
+
+
+.thumbnail {
+    text-align: center;
+}
