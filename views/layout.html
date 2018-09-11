@@ -9,25 +9,31 @@
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="../static/css/main.css">
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  
+    <script type="text/javascript" src="../static/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+
 </head>
 <body>
-
-    <nav class="navbar navbar-default navbar-fixed-top" style="height:60px;">
-        <div class="container" style="height:100%;"> 
-            <div class="nav navbar-header m-nav-logo">
-                
+    <!-- navigation-->
+    <nav class="navbar navbar-fixed-top">
+        <div class="w wrap" style="height: 100%;"> 
+            <div class="nav m-nav-logo"> 
+                <img src="../static/img/l_redhat-lg.png" alt="">
             </div> 
-            <div class="nav-collapse">
-                <ul class="nav navbar-nav m-nav-list navbar-left">
-                    <li>首页</li>
-                    <li>公司介绍</li>
-                    <li>服务内容</li>
-                    <li>加入我们</li>
-                    <li>联系我们</li>
-                </ul>
-            </div>
+            <ul class="m-nav-ul">
+                <li class="m-current-item" onClick="location.href='./'">首页</li>
+                <li onClick="location.href='./aboutus'">公司介绍</li>
+                <li onClick="location.href='./'">服务内容</li>
+                <li onClick="location.href='./joinus'">加入我们</li>
+                <li onClick="location.href='./contactus'">联系我们</li>
+            </ul>
         </div>
-      </nav>
+    </nav>
 
+    <!-- current content -->
+    {{.LayoutContent}}
+
+    <script type="text/javascript" src="../static/js/m.js"></script>
 </body>
 </html>
