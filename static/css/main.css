@@ -75,6 +75,25 @@ li {
 }
 
 
+.m-main{
+    min-height: 300px; 
+}
+
+.m-footer-main{
+    width: 100%; 
+}
+.m-footer-top {
+    background-color: #252525;
+}
+.m-footer-bottom {
+    height: 60px; 
+    text-align: center;
+    color: #ffffff;
+    background-color: #1a1a1a;
+}
+
+
+
 
 .big-title {
     margin:0 auto; 
@@ -124,3 +143,7 @@ li {
 .thumbnail {
     text-align: center;
 }
+
+
+
+
