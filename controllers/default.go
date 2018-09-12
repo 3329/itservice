@@ -30,3 +30,4 @@ func (c *MainController) ProcContactus() {
 	c.TplName = "contactus.tpl"
 }
 
+

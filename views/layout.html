@@ -22,17 +22,19 @@
                 <img src="../static/img/l_redhat-lg.png" alt="">
             </div> 
             <ul class="m-nav-ul">
-                <li class="m-current-item" onClick="location.href='./'">首页</li>
-                <li onClick="location.href='./aboutus'">公司介绍</li>
+                <li id="index">首页</li>
+                <li id="aboutus" onClick="location.href='./aboutus'">公司介绍</li>
                 <li onClick="location.href='./'">服务内容</li>
-                <li onClick="location.href='./joinus'">加入我们</li>
-                <li onClick="location.href='./contactus'">联系我们</li>
+                <li id="joinus" onClick="location.href='./joinus'">加入我们</li>
+                <li id="contactus" onClick="location.href='./contactus'">联系我们</li>
             </ul>
         </div>
     </nav>
 
     <!-- current content -->
     {{.LayoutContent}}
+
+    <div id="myDiv"></div>
 
     <script type="text/javascript" src="../static/js/m.js"></script>
 </body>
