@@ -1,0 +1,64 @@
+<div class="w-full wrap" style="background-color: #fff;">
+    <ul class="w wrap service-list">
+        <li>网络设备</li>
+        <li>办公设备</li>
+        <li>门禁系统</li>
+        <li>POS系统</li>
+        <li>服务器</li>
+        <li>监控</li>
+    </ul>
+</div>
+<div class="w wrap">
+
+    <ul class="quick-offers">
+        <li class="quick-offer">
+            <span class="glyphicon glyphicon-align-left" aria-hidden="true"></span>
+            <h4>无线AP布线安装调试（含PVC管、辅材；不含开槽）</h4>
+        </li>
+        <li class="quick-offer">
+            <h4>无线AP维修，检测</h4>
+        </li>
+        <li class="quick-offer">
+            <h4>WEB界面的路由器/防火墙/交换机/无线设备－安装、调试（上网设置和内网互通等常用配置）</h4>
+        </li>
+        <li class="quick-offer">
+            <h4>命令式界面的路由器/防火墙/交换机/无线设备－安装、调试（上网设置和内网互通等常用配置）</h4>
+        </li>
+    </ul>
+    <span class="badge">01</span>
+</div>
+
+
+
+
+
+<!-- css -->
+<style>
+    .service-list {
+        height: 50px;
+    }
+    .service-list>li {
+        float: left; 
+        margin-right: 20px; 
+        padding: 10px; 
+    }
+</style>
+
+<!-- javascript -->
+<script type="text/javascript">
+    $(".m-current-nav-item").removeClass("m-current-nav-item");
+    $("#service").addClass("m-current-nav-item"); 
+
+    $(".service-list>li").click(function() {
+        $(".m-current-service-item").removeClass("m-current-service-item");
+        $(this).addClass("m-current-service-item");
+    }).mouseenter(function() {
+        $(this).addClass("m-enter-item");
+    }).mouseleave(function() {
+        $(this).removeClass("m-enter-item");
+    });
+
+
+    $(".m-current-service-item").removeClass(".m-current-service-item"); 
+
+</script>

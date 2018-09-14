@@ -12,7 +12,7 @@ func (c *MainController) Get() {
 	c.Data["Website"] = "beego.me"
 	c.Data["Email"] = "astaxie@gmail.com"
 	c.Layout = "layout.html"
-	c.TplName = "index.tpl"
+	c.TplName = "index.html"
 }
 
 func (c *MainController) ProcAboutus() {
@@ -20,14 +20,19 @@ func (c *MainController) ProcAboutus() {
 	c.TplName = "aboutus.html"
 }
 
+func (c *MainController) ProcService() {
+	c.Layout = "layout.html"
+	c.TplName = "service.html"
+}
+
 func (c *MainController) ProcJoinus() {
 	c.Layout = "layout.html"
-	c.TplName = "joinus.tpl"
+	c.TplName = "joinus.html"
 }
 
 func (c *MainController) ProcContactus() {
 	c.Layout = "layout.html"
-	c.TplName = "contactus.tpl"
+	c.TplName = "contactus.html"
 }
 
 

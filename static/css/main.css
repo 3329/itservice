@@ -1,5 +1,6 @@
 body {
     padding-top: 60px; 
+    background-color: #f3f5f6;
 }
 div {
     display: block;
@@ -16,15 +17,26 @@ li {
 }
 
 .w {
-    width: 900px;
+   width: 960px;
+}
+.w-full {
+    width: 100%;
 }
 
 
-.wide-bgcolor {
-    background-color: #1296db;
+.m-banner-index {
+    width: 100%; 
+    height: 400px; 
+    background-image: url(../img/nimbus-hero_grey.jpg);
+    background-color: #646464;
 }
 
-.m-current-item {
+.m-current-nav-item {
+    color: darkorange;
+    border-bottom-style: solid;
+}
+
+.m-current-service-item {
     color: darkorange;
     border-bottom-style: solid;
 }
