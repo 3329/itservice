@@ -112,15 +112,14 @@ li {
 }
 
 .itbox {
-    padding-bottom: 30px; 
+    display: block;
+    overflow: hidden;
+    padding: 50px 0;
     /*
     background: linear-gradient(-185deg,rgba(245,245,245,1) 50%,#fff 50%);
     background: linear-gradient(185deg,#fff 50%,rgba(245,245,245,1) 50%);
     */
-    background-image: url(https://confidentcustomer.com/img/site/How_it_works_bg.png);
     background-color: #ffffff;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
 }
 
 .business-show-left{
@@ -135,15 +134,15 @@ li {
 }
 .tin {
     text-align: center;
-    padding-bottom: 20px; 
     color: #666666;
+    padding: 20px 0; 
 }
 .tin h4{
     color: black;
     line-height: 30px; 
     padding-bottom: 10px; 
 }
-.tin-desc {
+.tin-desc1 {
     /* background-color: #f5f5f5; */
     margin: 10px; 
     padding: 5px 0;
