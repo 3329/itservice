@@ -25,10 +25,8 @@ li {
 
 
 .m-banner-index {
-    width: 100%; 
     height: 400px; 
     background-image: url(../img/nimbus-hero_grey.jpg);
-    background-color: #646464;
 }
 
 .m-current-nav-item {
