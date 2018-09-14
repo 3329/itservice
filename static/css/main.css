@@ -84,20 +84,20 @@ li {
     padding: 15px 20px; 
 }
 
-
-.m-main{
+.m-body{
     min-height: 300px; 
 }
 
-
+.m-footer {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
 .m-footer-top {
     background-color: #252525;
 }
 .m-footer-bottom {
     height: 60px; 
     text-align: center;
-    color: #ffffff;
-    background-color: #1a1a1a;
 }
 
 
