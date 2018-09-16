@@ -27,8 +27,9 @@
 
 </head>
 <body>
+
     <!-- navigation-->
-    <nav class="navbar navbar-fixed-top">
+    <div class="navbar navbar-fixed-top">
         <div class="w wrap" style="height: 100%;"> 
             <div class="nav m-nav-logo"> 
                 <img src="../static/img/l_redhat-lg.png" alt="">
@@ -36,13 +37,14 @@
             <ul class="m-nav-ul">
                 <li id="index" onClick="location.href='./'">首页</li>
                 <li id="aboutus" onClick="location.href='./aboutus'">公司介绍</li>
-                <li id="service" onClick="location.href='./service'">服务内容</li>
+                <li id="service" onClick="location.href='./service'">专业服务</li>
                 <li id="joinus" onClick="location.href='./joinus'">加入我们</li>
                 <li id="contactus" onClick="location.href='./contactus'">联系我们</li>
             </ul>
         </div>
-    </nav>
+    </div>
 
+ 
     <!-- current content -->
     <div class="m-body w-full wrap">
         {{.LayoutContent}}

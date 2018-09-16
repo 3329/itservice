@@ -13,6 +13,11 @@ func (c *MainController) Get() {
 	c.Data["Email"] = "astaxie@gmail.com"
 	c.Layout = "layout.html"
 	c.TplName = "index.html"
+
+	/*
+	c.LayoutSections = make(map[string]string)
+	c.LayoutSections["HtmlHead"] = "blogs/html_head.tpl"
+	*/
 }
 
 func (c *MainController) ProcAboutus() {
