@@ -23,26 +23,56 @@
     <link rel="stylesheet" href="../static/css/main.css">
   
     <script type="text/javascript" src="../static/js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../static/js/bootstrap.min.js111"></script>
+    
 
 </head>
 <body>
 
     <!-- navigation-->
     <div class="navbar navbar-fixed-top">
-        <div class="w wrap" style="height: 100%;"> 
+        <div class="w wrap"> 
             <div class="nav m-nav-logo"> 
                 <img src="../static/img/l_redhat-lg.png" alt="">
             </div> 
             <ul class="m-nav-ul">
                 <li id="index" onClick="location.href='./'">首页</li>
-                <li id="aboutus" onClick="location.href='./aboutus'">公司介绍</li>
                 <li id="service" onClick="location.href='./service'">专业服务</li>
+                <li id="aboutus" onClick="location.href='./aboutus'">关于我们</li>
                 <li id="joinus" onClick="location.href='./joinus'">加入我们</li>
                 <li id="contactus" onClick="location.href='./contactus'">联系我们</li>
             </ul>
         </div>
     </div>
+
+
+
+    <div class="m-sub-nav w-full wrap" style="display: none;">
+        <div class="m-sub-menu w wrap">
+            <ul class="m-sub-items">
+                <span>运维服务</span>
+                <li><a href="./service">驻场服务</a></li>
+                <li><a href="./aboutus">应急服务</a></li>
+                <li><a href="">远程服务</a></li>
+                <li><a href="">微网关服务</a></li>
+            </ul>
+            <ul class="m-sub-items">
+                <span>采购服务</span>
+                <li><a href="./service">驻场服务</a></li>
+                <li><a href="">应急服务</a></li>
+                <li><a href="">远程服务</a></li>
+                <li><a href="">微网关服务</a></li>
+            </ul>
+            <ul class="m-sub-items">
+                <span>生态链服务</span>
+                <li><a href="./service">驻场服务</a></li>
+                <li><a href="">应急服务</a></li>
+                <li><a href="">远程服务</a></li>
+                <li><a href="">微网关服务</a></li>
+            </ul>
+        </div>
+    </div>
+
 
  
     <!-- current content -->
@@ -60,6 +90,7 @@
             <p>版权所有 © 2016-2018  上海三藩网络信息科技有限公司 保留一切权利</p>
         </div>
     </div>
+   
     <script type="text/javascript" src="../static/js/m.js"></script>
 
 </body>

@@ -6,11 +6,14 @@ body {
 div {
     display: block;
 }
-
 li {
     list-style: none;
     cursor: pointer;
 }
+a {
+    text-decoration: none !important;
+}
+
 
 .wrap {
     margin: 0 auto; 
@@ -42,7 +45,7 @@ li {
     */
 
     color: darkorange;
-    border-bottom-style: solid;
+    /* border-bottom-style: solid;*/
 }
 
 
