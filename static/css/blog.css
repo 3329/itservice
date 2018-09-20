@@ -17,7 +17,8 @@ h6, .h6 {
   /*
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
   font-weight: normal;
-  color: #333;
+  
+  /* color: #333; */
 }
 
 
@@ -65,6 +66,7 @@ h6, .h6 {
 .sidebar-module {
   padding: 15px;
   margin: 0 -15px 15px;
+  line-height: 1.9;
 }
 .sidebar-module-inset {
   padding: 15px;
