@@ -1,5 +1,5 @@
 <div class="m-huge-banner w-full wrap">
-  <div class="m-huge-title text-center">专业服务</div>
+  <div class="m-huge-title text-center">{{.CurTitle}}</div>
 </div>
 
 <div class="container"> 
@@ -8,11 +8,11 @@
 
 	<div class="row featurette">
 		<div class="col-md-7">
-			<h2 class="featurette-heading">驻场服务</h2>
-			<p class="lead">本服务适合于用户电脑数量50台以上或对IT依赖性比较高或IT工作量比较集中的企业。 这种服务方式优点就是服务方式非常灵活。</p>
+			<h2 class="featurette-heading">{{.CurTitle}}</h2>
+			<p class="lead">{{.TitleDesc}}</p>
 		</div>
 		<div class="col-md-5">
-			<img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzUwMHg1MDAvYXV0bwpDcmVhdGVkIHdpdGggSG9sZGVyLmpzIDIuNi4wLgpMZWFybiBtb3JlIGF0IGh0dHA6Ly9ob2xkZXJqcy5jb20KKGMpIDIwMTItMjAxNSBJdmFuIE1hbG9waW5za3kgLSBodHRwOi8vaW1za3kuY28KLS0+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48IVtDREFUQVsjaG9sZGVyXzE2NWYwNDQxODgwIHRleHQgeyBmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MjVwdCB9IF1dPjwvc3R5bGU+PC9kZWZzPjxnIGlkPSJob2xkZXJfMTY1ZjA0NDE4ODAiPjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjRUVFRUVFIi8+PGc+PHRleHQgeD0iMTg1LjEyNSIgeT0iMjYxLjEiPjUwMHg1MDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" data-holder-rendered="true">
+			<img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="../static/img/w1.png" data-holder-rendered="true">
 		</div>
 	</div>
 
@@ -21,33 +21,39 @@
 	<div class="row featurette">
 		<div class="col-md-7 col-md-push-5">
 			<h2 class="featurette-heading">我们的方案：</h2>
-			<p class="lead">我们提供桌面支持、项目管理、项目实施等各类IT人员派驻服务，通过流程化的预防性体系和严格的工程师绩效考核体系，控制服务质量和安全保密等客户关注点,具体方式：</p>
+			<p class="">{{.PlanDesc}}</p>
 			<ul>
-				<li>每周5天（周一~周五），按照用户作息时间上门提供人员派驻服务</li>
-				<li>每周3天（如周一、三、五），按照用户作息时间上门提供人员派驻服务</li>
-				<li>每周2天（如周二、四），按照用户作息时间上门提供人员派驻服务</li>
-				<li>每周1天（如周三），按照用户作息时间上门提供人员派驻服务</li>
+				{{range $index, $elem := .PlanItemsMap}}
+					<li>{{$index}} - {{$elem}} </li>	
+			{{end}}
 			</ul>
 		</div>
 		<div class="col-md-5 col-md-pull-7">
-			<img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzUwMHg1MDAvYXV0bwpDcmVhdGVkIHdpdGggSG9sZGVyLmpzIDIuNi4wLgpMZWFybiBtb3JlIGF0IGh0dHA6Ly9ob2xkZXJqcy5jb20KKGMpIDIwMTItMjAxNSBJdmFuIE1hbG9waW5za3kgLSBodHRwOi8vaW1za3kuY28KLS0+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48IVtDREFUQVsjaG9sZGVyXzE2NWYwNDNlYmQ2IHRleHQgeyBmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MjVwdCB9IF1dPjwvc3R5bGU+PC9kZWZzPjxnIGlkPSJob2xkZXJfMTY1ZjA0M2ViZDYiPjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjRUVFRUVFIi8+PGc+PHRleHQgeD0iMTg1LjEyNSIgeT0iMjYxLjEiPjUwMHg1MDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" data-holder-rendered="true">
+			<img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="../static/img/enginner.png" data-holder-rendered="true">
 		</div>
 	</div>
 
 	<hr class="featurette-divider">
 
 	<div class="row featurette">
-		<div class="col-md-7">
-			<h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-			<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+		<div class="col-md-8">
+			<h2 class="featurette-heading">我们提供的保障:</h2>
+			<ul>
+				<li>1. 人员固定 ： 一经选择我们的服务，我们成立以1名服务经理为组长的对口服务小组，固定人员服务 </li>
+				<li>2. 流程化管理 ：以1年服务周期分为 导入期、服务期和结束期，控制服务的全过程，严格服务人员绩效考核，确保服务质量</li>
+				<li>3. 技术培训、团队协作 ： 我们的服务人员均经过严格的技术训练和服务规范培训，并通过每月2次的技术交流以及不定期的集训式培训，保障服务人员的技术领先性，同时，形成工程师 – 项目经理 – 服务经理 – 技术专家的梯队支持，充分体现团队的支持能力和服务优势</li>
+				<li>4. 预防控制，降低故障率 ： 我们建立了一系列的故障预防机制，主动服务，强化非故障期的检测和预处理，以降低故障率为服务目标，而不是被动的维修维护。 据统计，按照我们的网络整理和预防措施标准实施后，故障率会降低20~30%</li>
+				<li>5. 充足人员后备 ： 我们按照服务人员的数量，提供充足的后备人员，避免人员波动造成的服务断档，并为用户临时工作量增加的人员提请提供充足支持力量</li>
+				<li>6.  安全保密 ： 我们通过<服务人员上门规范>、与服务人员之间的<保密协议>、与客户之间的<保密协议>、对服务人员的职业素质教育、对服务人员的严格监管、人性化的激励，从人性化和严肃的法律多方位保障客户的信息安全。</li>
+				<li>7. 1小时投诉响应 ： 一旦客户投诉，我们承诺在1小时内提供解决方案</li>
+			</ul>
 		</div>
-		<div class="col-md-5">
-			<img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzUwMHg1MDAvYXV0bwpDcmVhdGVkIHdpdGggSG9sZGVyLmpzIDIuNi4wLgpMZWFybiBtb3JlIGF0IGh0dHA6Ly9ob2xkZXJqcy5jb20KKGMpIDIwMTItMjAxNSBJdmFuIE1hbG9waW5za3kgLSBodHRwOi8vaW1za3kuY28KLS0+PGRlZnM+PHN0eWxlIHR5cGU9InRleHQvY3NzIj48IVtDREFUQVsjaG9sZGVyXzE2NWYwNDNkMWEwIHRleHQgeyBmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MjVwdCB9IF1dPjwvc3R5bGU+PC9kZWZzPjxnIGlkPSJob2xkZXJfMTY1ZjA0M2QxYTAiPjxyZWN0IHdpZHRoPSI1MDAiIGhlaWdodD0iNTAwIiBmaWxsPSIjRUVFRUVFIi8+PGc+PHRleHQgeD0iMTg1LjEyNSIgeT0iMjYxLjEiPjUwMHg1MDA8L3RleHQ+PC9nPjwvZz48L3N2Zz4=" data-holder-rendered="true">
+		<div class="col-md-4">
+			<img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="../static/img/u3.jpg" data-holder-rendered="true">
 		</div>
 	</div>
 
 	<hr class="featurette-divider">
-
 	<!-- /END THE FEATURETTES -->
 </div>
 
