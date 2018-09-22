@@ -41,3 +41,9 @@ func (c *MainController) ProcContactus() {
 }
 
 
+func (c *MainController) ProcYunwei01() {
+	c.Layout = "layout.html"
+	c.TplName = "yunwei.html"
+}
+
+

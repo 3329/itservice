@@ -12,4 +12,6 @@ func init() {
 	beego.Router("/service", &controllers.MainController{}, "*:ProcService")
 	beego.Router("/joinus", &controllers.MainController{}, "*:ProcJoinus")
 	beego.Router("/contactus", &controllers.MainController{}, "*:ProcContactus")
+
+	beego.Router("/yunwei01", &controllers.MainController{}, "*:ProcYunwei01")
 }
