@@ -27,12 +27,33 @@ a {
     width: 100%;
 }
 
+
 .m-huge-banner {
-    height: 305px;
-    background-image: url(../img/machine.png);
+    height: 200px;
+    /*
+    background-image: url(../img/machine1.png);
+    */
+    
+	background-image: url(../img/v5.png); 
     background-repeat: no-repeat;
+
     background-size: 100% 100%;
 }
+
+.m-huge-title {
+    color: black;
+    font-size: 60px; 
+    font-weight: 700;
+    line-height: 200px; 
+    /*
+    background: linear-gradient(-185deg,rgba(245,245,245,1) 50%,#fff 50%);
+    background: linear-gradient(185deg,#fff 50%,rgba(245,245,245,1) 50%);
+    */
+}
+
+
+
+
 
 .m-current-nav-item {
     color: darkorange;
@@ -104,17 +125,6 @@ a {
     margin-left: 20px;
 }
 
-
-.m-huge-title {
-    color: #ffffff;
-    font-size: 80px; 
-    font-weight: 700;
-    line-height: 305px; 
-    /*
-    background: linear-gradient(-185deg,rgba(245,245,245,1) 50%,#fff 50%);
-    background: linear-gradient(185deg,#fff 50%,rgba(245,245,245,1) 50%);
-    */
-}
 
 
 
