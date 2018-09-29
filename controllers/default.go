@@ -20,10 +20,7 @@ func (c *MainController) Get() {
 	*/
 }
 
-func (c *MainController) ProcAboutus() {
-	c.Layout = "layout.html"
-	c.TplName = "aboutus.html"
-}
+
 
 func (c *MainController) ProcService() {
 	c.Layout = "layout.html"
@@ -40,14 +37,25 @@ func (c *MainController) ProcNews() {
 	c.TplName = "news.html"
 }
 
+func (c *MainController) ProcAboutus() {
+	c.Layout = "layout.html"
+	c.TplName = "aboutus.html"
+
+	c.Data["CurTitle"] = "公司简介"
+}
+
 func (c *MainController) ProcJoinus() {
 	c.Layout = "layout.html"
-	c.TplName = "joinus.html"
+	c.TplName = "aboutus.html"
+
+	c.Data["CurTitle"] = "加入我们"
 }
 
 func (c *MainController) ProcContactus() {
 	c.Layout = "layout.html"
-	c.TplName = "contactus.html"
+	c.TplName = "aboutus.html"
+
+	c.Data["CurTitle"] = "联系我们"
 }
 
 
