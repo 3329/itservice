@@ -30,6 +30,16 @@ func (c *MainController) ProcService() {
 	c.TplName = "service.html"
 }
 
+func (c *MainController) ProcExcellent() {
+	c.Layout = "layout.html"
+	c.TplName = "excellent.html"
+}
+
+func (c *MainController) ProcNews() {
+	c.Layout = "layout.html"
+	c.TplName = "news.html"
+}
+
 func (c *MainController) ProcJoinus() {
 	c.Layout = "layout.html"
 	c.TplName = "joinus.html"
@@ -41,6 +51,7 @@ func (c *MainController) ProcContactus() {
 }
 
 
+// -------------------------YunWei Page start-------------------------------------------
 func (c *MainController) ProcYunwei01() {
 	c.Layout = "layout.html"
 	c.TplName = "yunwei.html"
@@ -105,3 +116,20 @@ func (c *MainController) ProcPageYuanchen() {
 	PlanItemsMap[0] = "我们通过专业的软件（Teamviewer）为用户提供快速、安全、稳定的远程服务（5分钟内相应）。" 
 	c.Data["PlanItemsMap"] = PlanItemsMap 
 }
+// -------------------------YunWei Page end-------------------------------------------
+
+
+
+// -------------------------RuoDian Page start-------------------------------------------
+func (c *MainController) ProcPageBuxian() {
+	c.Layout = "layout.html"
+	c.TplName = "ruodian.html"
+
+	c.Data["CurTitle"] = "综合布线"
+
+	var PlanItemsMap map[int]string 
+	PlanItemsMap = map[int]string{}
+	PlanItemsMap[0] = "我们通过专业的软件（Teamviewer）为用户提供快速、安全、稳定的远程服务（5分钟内相应）。" 
+	c.Data["PlanItemsMap"] = PlanItemsMap 
+}
+// -------------------------RuoDian Page end-------------------------------------------
