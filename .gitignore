@@ -1,2 +1,5 @@
 itservice.exe
 itservice.exe~
+debug
+.vscode/launch.json
+.gitignore

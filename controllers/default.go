@@ -41,21 +41,28 @@ func (c *MainController) ProcAboutus() {
 	c.Layout = "layout.html"
 	c.TplName = "aboutus.html"
 
-	c.Data["CurTitle"] = "公司简介"
+	c.Data["CrtTitle"] = "公司简介"
+	c.Data["AboutPageCrtContentsFlag"] = 0
+	// c.LayoutSections = make(map[string]string)
+	// c.LayoutSections["HtmlContents"] = "company_profile.tpl"
+
 }
 
 func (c *MainController) ProcJoinus() {
 	c.Layout = "layout.html"
 	c.TplName = "aboutus.html"
 
-	c.Data["CurTitle"] = "加入我们"
+	c.Data["CrtTitle"] = "加入我们"
+	c.Data["AboutPageCrtContentsFlag"] = 1
 }
 
 func (c *MainController) ProcContactus() {
 	c.Layout = "layout.html"
 	c.TplName = "aboutus.html"
 
-	c.Data["CurTitle"] = "联系我们"
+	c.Data["CrtTitle"] = "联系我们"
+	c.Data["AboutPageCrtContentsFlag"] = 2 
+
 }
 
 
@@ -64,7 +71,7 @@ func (c *MainController) ProcYunwei01() {
 	c.Layout = "layout.html"
 	c.TplName = "yunwei.html"
 
-	c.Data["CurTitle"] = "应急服务"
+	c.Data["CrtTitle"] = "应急服务"
 	c.Data["TitleDesc"] = "本服务适合于用户电脑数量50台以上或对IT依赖性比较高或IT工作量比较集中的企业。 这种服务方式优点就是服务方式非常灵活。"
 	c.Data["PlanDesc"] = "我们提供桌面支持、项目管理、项目实施等各类IT人员派驻服务，通过流程化的预防性体系和严格的工程师绩效考核体系，控制服务质量和安全保密等客户关注点,具体方式：" 
 	
@@ -81,7 +88,7 @@ func (c *MainController) ProcPageZhuchang() {
 	c.Layout = "layout.html"
 	c.TplName = "yunwei.html"
 
-	c.Data["CurTitle"] = "驻场服务"
+	c.Data["CrtTitle"] = "驻场服务"
 	c.Data["TitleDesc"] = "本服务适合于用户电脑数量50台以上或对IT依赖性比较高或IT工作量比较集中的企业。 这种服务方式优点就是服务方式非常灵活。"
 	c.Data["PlanDesc"] = "我们提供桌面支持、项目管理、项目实施等各类IT人员派驻服务，通过流程化的预防性体系和严格的工程师绩效考核体系，控制服务质量和安全保密等客户关注点,具体方式：" 
 	
@@ -98,7 +105,7 @@ func (c *MainController) ProcPageYinji() {
 	c.Layout = "layout.html"
 	c.TplName = "yunwei.html"
 
-	c.Data["CurTitle"] = "应急服务"
+	c.Data["CrtTitle"] = "应急服务"
 	c.Data["TitleDesc"] = "本服务适用于用户电脑台数量50台以内的企业。 这种服务方式优点是方便、灵活、随叫随到, 5分钟响应、2小时内到场服务。 专属工程师、拒绝陌生面孔，而且相对固定工程师驻场服务，应急响应服务成本相对比较低。"
 	c.Data["PlanDesc"] = "具体方式：" 
 	
@@ -115,7 +122,7 @@ func (c *MainController) ProcPageYuanchen() {
 	c.Layout = "layout.html"
 	c.TplName = "yunwei.html"
 
-	c.Data["CurTitle"] = "远程服务"
+	c.Data["CrtTitle"] = "远程服务"
 	c.Data["TitleDesc"] = "此服务适用于用户的电脑数量10台内或者 移动办公人员多，地域分散或需要支持的次数少，响应要求却很高的企业。"
 	c.Data["PlanDesc"] = "具体方式：" 
 	
@@ -133,7 +140,7 @@ func (c *MainController) ProcPageBuxian() {
 	c.Layout = "layout.html"
 	c.TplName = "ruodian.html"
 
-	c.Data["CurTitle"] = "综合布线"
+	c.Data["CrtTitle"] = "综合布线"
 
 	var PlanItemsMap map[int]string 
 	PlanItemsMap = map[int]string{}
@@ -141,3 +148,6 @@ func (c *MainController) ProcPageBuxian() {
 	c.Data["PlanItemsMap"] = PlanItemsMap 
 }
 // -------------------------RuoDian Page end-------------------------------------------
+
+
+

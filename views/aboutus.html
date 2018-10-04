@@ -1,5 +1,5 @@
 <style>
-    .aboutus-area {
+	.aboutus-area {
         background-image: url(../static/img/index_about.jpeg);
         background-repeat: no-repeat;
         height: 305px;
@@ -41,34 +41,28 @@
 			</div>
 
 			<div class="col-xs-8 col-md-10">
-				<h1 class="text-center">{{.CurTitle}}</h1> 
+				<h1 class="text-center">{{.CrtTitle}}</h1>
 				<hr class="featurette-divider">
-				<p>
-					三藩科技总部位于上海，成立于2018年，是一家提供IT服务/IT运维的公司。我们的团队大多由3~10的从业经验的人员组成。
-				</p>
-				<br>
-				<p>
-					我们致力于为企业客户提供IT运维外包、集中IT采购、弱电工程、网络集成、
-					云服务、网站建设、办公设备租赁、金蝶用友财务软件咨询和实施、软件定制开发等“一站式”的信息服务解决方案。
-					我们提供电脑安装维护、服务器安装维护、网络设备安装维护、监控系统安装维护、无线网络安装维护、POS系统安装维护、
-					办公设备安装维护等7大标准化、及网络工程（定制化）服务，致力于打造创新互联网+IT服务B2B-C平台，以专业的服务和负责任的态度，
-					为电商、连锁企业、微、小企业、政府及事业单位、设备厂商等提供“诚信、透明、无忧、高效、智能”以及低成本的一站式IT服务解决方案。
-				</p>
-				<br>
-				<p>三藩科技将携手客户、员工、股东、伙伴，共创美好生活：</p>
-				<p>携手客户，通过提供优质产品与服务，不断超越客户期望，持续创造客户价值；</p>
-				<p>携手员工，通过权益保护与人文关怀，帮助员工实现价值，提升员工幸福指数；</p>
-				<p>携手股东，通过依法依规治企，提高治理能力与业绩水平，实现企业稳健发展；</p>
-				<p>携手伙伴，通过恪守商业道德，营造良好商业环境，开创合作共赢新局；</p>
+				<div>
+					{{if eq 0 .AboutPageCrtContentsFlag}}
+						{{template "company_profile.tpl" .}}
+					{{else if eq 1 .AboutPageCrtContentsFlag}}
+						{{template "joinus.tpl" .}}
+					{{else if eq 2 .AboutPageCrtContentsFlag}}
+						{{template "contactus.tpl" .}}
+					{{else}}
+						<p>你是我的小啊小苹果!!!</p>
+					{{end}}
+				</div>
+
 			</div>
+			<hr class="featurette-divider">
+
 		</div>
-		<hr class="featurette-divider">
-
 	</div>
-
 </div>
 
 <script type="text/javascript">
-    $(".m-current-nav-item").removeClass("m-current-nav-item");
-    $("#aboutus").addClass("m-current-nav-item"); 
+	$(".m-current-nav-item").removeClass("m-current-nav-item");
+	$("#aboutus").addClass("m-current-nav-item");
 </script>
