@@ -1,6 +1,6 @@
 body {
     min-width: 1200px;
-    padding-top: 60px; 
+    padding-top: 80px; 
     /* background-color: #f3f5f6; */
 }
 div {
@@ -12,8 +12,12 @@ li {
 }
 a {
     text-decoration: none !important;
-}
+} 
 
+/*
+a:hover {
+    color: darkorange !important;
+}*/
 
 .wrap {
     margin: 0 auto; 
@@ -40,7 +44,7 @@ a {
 
 .m-huge-title {
     color: black;
-    font-size: 60px; 
+    font-size: 60px;
     font-weight: 700;
     line-height: 200px; 
     /* 
@@ -51,34 +55,30 @@ a {
 
 
 
-
-
 .m-current-nav-item {
-    color: darkorange;
-    border-bottom-style: solid;
+    color: darkorange !important;
+    text-decoration: line-through !important;
 }
 
 .m-enter-item {
     /* background-color: rgba(0, 0, 0, 0.8); */
     /* border-bottom-style: solid; */
-    color: darkorange; 
+    color: darkorange !important; 
 }
 
 
-
-
 .navbar {
-    height: 60px;
-    /*
-    color: #FB7A4F;
-    专注于心 专业于行
-   */
-
     background-image: url(../img/nimbus-hero_grey.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 30%;
-    
+    padding: 15px 0;
+}
+
+.navbar-nav>li>a{
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 
@@ -88,18 +88,6 @@ a {
     height: 100%;
 }
 
-.m-nav-ul {
-    margin-left: 250px;
-    color: #ffffff;
-}
-.m-nav-ul>li {
-    display: inline;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 60px;
-    border: 6px 0;
-    padding: 15px 20px; 
-}
 
 .m-body{
     min-height: 400px; 
