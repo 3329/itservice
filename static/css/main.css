@@ -35,7 +35,7 @@ a:hover {
 
 .m-huge-banner {
     height: 200px;
-    /* background-image: url(../img/machine1.png); */
+    /* background-image: url(../img/machine1.png); */ 
     
     background-image: url(../img/v5.png); 
     /* background-image: url(../img/iBanner.jpg);  */
@@ -55,6 +55,9 @@ a:hover {
 }
 
 
+#mega {
+    background: rgba(0, 0, 0, 0.2);
+}
 
 .m-current-nav-item {
     color: darkorange !important;
@@ -64,7 +67,7 @@ a:hover {
 .m-enter-item {
     /* border-bottom-style: solid; */
     /* color:yellowgreen !important; */ 
-    color: darkorange !important;
+    color: darkorange !important; 
     /*color: #c00 !important;*/
 }
 
@@ -80,16 +83,16 @@ a:hover {
     background-image: url(../img/hhh.jpg);
     background-repeat: no-repeat;
     background-size: 100% auto;
-    background-position: 50% 0;
-    padding: 15px 0; 
+    background-position: 50% 0; 
 
-    color: #fff !important;
+    color: #fff !important; 
 }
 
 .navbar-nav>li>a{
     color: #fff;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
+    line-height: 50px;
 }
 
 
@@ -120,10 +123,5 @@ a:hover {
     float: left;
     margin-left: 20px;
 }
-
-
-
-
-
 
 
