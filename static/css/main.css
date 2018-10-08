@@ -16,7 +16,6 @@ a {
 } 
 
 
-
 .wrap {
     margin: 0 auto; 
     height: 100%;
@@ -36,10 +35,8 @@ a {
     font-size: 50px;
     font-weight: 700;
     line-height: 200px; 
-    /* 
-    background: linear-gradient(-185deg,rgba(245,245,245,1) 50%,#fff 50%);
-    background: linear-gradient(185deg,#fff 50%,rgba(245,245,245,1) 50%);
-    */
+    /* background: linear-gradient(-185deg,rgba(245,245,245,1) 50%,#fff 50%);
+    background: linear-gradient(185deg,#fff 50%,rgba(245,245,245,1) 50%); */
 }
 
 
@@ -60,17 +57,14 @@ a {
     /*text-decoration: line-through !important;*/
 }
 
-.m-enter-item {
-    /* border-bottom-style: solid; */
+.m-enter-item { 
     /* color:yellowgreen !important; */ 
     color: darkorange !important; 
-    /*color: #c00 !important;*/
 }
 
 
 .navbar {
-    /*
-    background-image: url(../img/nimbus-hero_grey.jpg);
+    /* background-image: url(../img/nimbus-hero_grey.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 30%;
