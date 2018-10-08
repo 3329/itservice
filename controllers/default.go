@@ -40,30 +40,8 @@ func (c *MainController) ProcNews() {
 func (c *MainController) ProcAboutus() {
 	c.Layout = "layout.html"
 	c.TplName = "aboutus.html"
-
-	c.Data["CrtTitle"] = "公司简介"
-	c.Data["AboutPageCrtContentsFlag"] = 0
-	// c.LayoutSections = make(map[string]string)
-	// c.LayoutSections["HtmlContents"] = "company_profile.tpl"
-
 }
 
-func (c *MainController) ProcJoinus() {
-	c.Layout = "layout.html"
-	c.TplName = "aboutus.html"
-
-	c.Data["CrtTitle"] = "加入我们"
-	c.Data["AboutPageCrtContentsFlag"] = 1
-}
-
-func (c *MainController) ProcContactus() {
-	c.Layout = "layout.html"
-	c.TplName = "aboutus.html"
-
-	c.Data["CrtTitle"] = "联系我们"
-	c.Data["AboutPageCrtContentsFlag"] = 2 
-
-}
 
 
 // -------------------------YunWei Page start-------------------------------------------

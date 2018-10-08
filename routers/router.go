@@ -13,10 +13,6 @@ func init() {
 	beego.Router("/excellent", &controllers.MainController{}, "*:ProcExcellent")
 	beego.Router("/news", &controllers.MainController{}, "*:ProcNews")
 
-
-	beego.Router("/joinus", &controllers.MainController{}, "*:ProcJoinus")
-	beego.Router("/contactus", &controllers.MainController{}, "*:ProcContactus")
-
 	// -------------------------YunWei---------------------------------
 	beego.Router("/yunwei01", &controllers.MainController{}, "*:ProcYunwei01")
 	beego.Router("/zhuchang", &controllers.MainController{}, "*:ProcPageZhuchang")

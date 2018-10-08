@@ -22,18 +22,9 @@ a {
     height: 100%;
 }
 
-.w {
-   width: 970px;
-}
-.w-full {
-    width: 100%;
-}
-
-
 .m-huge-banner {
     height: 200px;
     /* background-image: url(../img/machine1.png); */ 
-    
     background-image: url(../img/v5.png); 
     /* background-image: url(../img/iBanner.jpg);  */
     background-repeat: no-repeat;
@@ -42,7 +33,7 @@ a {
 
 .m-huge-title {
     color: black;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 700;
     line-height: 200px; 
     /* 
@@ -98,12 +89,6 @@ a {
     line-height: 50px;
 }
 
-
-.m-nav-logo {
-    float: left;
-    width: 200px;
-    height: 100%;
-}
 
 .m-body{
     min-height: 600px; 
