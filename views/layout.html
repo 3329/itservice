@@ -26,30 +26,28 @@
 
 	<script type="text/javascript" src="../static/js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
-
 </head>
 
 <body>
 	<!-- navigation-->
 	<div class="navbar navbar-fixed-top">
 		<div class="container">
-			<div class="m-nav-logo" onClick="location.href='./'">
+			<div class="m-nav-logo" onClick="location.href='/'">
 				<img src="../static/img/l_redhat-lg.png" alt="">
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
-					<li><a id="index" href="./">首页</a></li>
-					<li><a id="aboutus" href="./aboutus">关于我们 <span class="caret"></span></a></li>
-					<li><a id="service" href="./service">解决方案 <span class="caret"></span></a></li>
-					<li><a href="./excellent">我们的客户</a></li>
-					<li><a id="news" href="./news">媒体资讯</a></li>
+					<li><a id="index" href="/">首页</a></li>
+					<li><a id="aboutus" href="/aboutus">关于我们 <span class="caret"></span></a></li>
+					<li><a id="service" href="/service">解决方案 <span class="caret"></span></a></li>
+					<li><a href="/excellent">我们的客户</a></li>
+					<li><a id="news" href="/news">媒体资讯</a></li>
 				</ul>
 			</div>
 
-			<div id="mega" class="row" style="display: none;">
-				<hr class="featurette-divider">
-				<div id="mega-aboutus" class="col-md-9 sidebar-module" style="display: none;">
-					<div class="sidebar-module ">
+			<div id="mega" class="row container" style="display: none;">
+				<div id="mega-aboutus" class="col-md-10 sidebar-module" style="display: none;">
+					<div class="sidebar-module col-md-offset-2">
 						<h4>关于我们</h4>
 						<ol class="list-unstyled"> 
 							<li><a href="./service/#s1">关于我们</a></li>
@@ -58,16 +56,17 @@
 						</ol>
 					</div>
 				</div>
-				<div id="mega-service" class="col-md-9 sidebar-module" style="display: none;">
-					<div class="sidebar-module col-md-4"> 
+			
+				<div id="mega-service" class="col-md-10 sidebar-module" style="display: none;">
+					<div class="sidebar-module col-md-offset-2 col-md-3"> 
 						<h4>运维服务</h4> 
 						<ol class="list-unstyled">
-							<li><a href="./service/#s1">驻场服务</a></li>
-							<li><a href="./service/#s2">应急服务</a></li>
-							<li><a href="./service/#s3">远程服务</a></li>
+							<li><a href="/zhuchang">驻场服务</a></li>
+							<li><a href="/yinji">应急服务</a></li>
+							<li><a href="/yuanchen">远程服务</a></li>
 						</ol>
 					</div>
-					<div class="sidebar-module col-md-4"> 
+					<div class="sidebar-module col-md-3"> 
 						<h4>系统集成</h4>
 						<ol class="list-unstyled">
 							<li><a href="./service/#s1">网络改造</a></li>
@@ -83,22 +82,22 @@
 							<li><a href="./service/#s3">邮件服务器</a></li>
 						</ol>
 					</div>
-					<div class="sidebar-module col-md-4">
+					<div class="sidebar-module col-md-3">
 						<h4>弱电工程</h4>
 						<ol class="list-unstyled">
-							<li><a href="./service/#s1">综合布线</a></li>
-							<li><a href="./service/#s2">机房建设</a></li>
-							<li><a href="./service/#s3">门禁考勤</a></li>
-							<li><a href="./service/#s1">视频监控</a></li>
-							<li><a href="./service/#s2">多媒体会议室</a></li>
-							<li><a href="./service/#s3">智能小区</a></li>
-							<li><a href="./service/#s1">拼接屏</a></li>
-							<li><a href="./service/#s2">一卡通</a></li> 
+							<li><a href="/buxian">综合布线</a></li>
+							<li><a href="/jifangjianshe">机房建设</a></li>
+							<li><a href="/menjinkaoqing">门禁考勤</a></li>
+							<li><a href="/service/#s1">视频监控</a></li>
+							<li><a href="/service/#s2">多媒体会议室</a></li>
+							<li><a href="/service/#s3">智能小区</a></li>
+							<li><a href="/service/#s1">拼接屏</a></li>
+							<li><a href="/service/#s2">一卡通</a></li> 
 						</ol>
 					</div> 
 				</div>
 
-				<div class="col-md-3 sidebar-module">
+				<div class="col-md-2 sidebar-module">
 					<div style="padding:10px;">
 						<img src="../static/img/wx.jpg" alt="" width="100" height="100">
 					</div>
@@ -124,9 +123,9 @@
 				<li class="sidebar-module">
 					<h4>运维服务</h4>
 					<ol class="list-unstyled">
-						<li><a href="./service/#s1">驻场服务</a></li>
-						<li><a href="./service/#s2">应急服务</a></li>
-						<li><a href="./service/#s3">远程服务</a></li>
+						<li><a href="/zuchang">驻场服务</a></li>
+						<li><a href="/yinji">应急服务</a></li>
+						<li><a href="/yuanchen">远程服务</a></li>
 					</ol>
 				</li>
 				<li class="sidebar-module">

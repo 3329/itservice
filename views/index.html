@@ -19,28 +19,30 @@
     height: 50%;
 }
 
+
 /* Center align the text within the three columns below the carousel */
-.marketing .col-md-4 {
-  margin-bottom: 20px;
-  text-align: center;
+.recommended_service_block {
+	background-color:whitesmoke;
+	background-image: url(../static/img/bkgd.png); 
+	padding: 50px 0; 
 }
-.marketing h2 {
-  font-weight: normal;
+.recommended_service_item {
+	text-align: center; 
+	height: 200px;
+	margin: 10px 0;  
+	padding: 5px 2px; 
 }
-.marketing .col-md-4 p {
-  margin-right: 10px;
-  margin-left: 10px;
+.recommended_service_item {
+	background-color: #fff;
 }
-
-/* Thin out the marketing headings */
-.featurette-heading {
-	margin-top: 50px;
-	margin-top: 120px;
-	font-weight: 300;
-	line-height: 1;
-	letter-spacing: -1px;
+.recommended_service_item:hover {
+	background-color:whitesmoke; 
+	background-color: #e6e6e6;
 }
 
+a {
+	color: black;
+}
 </style>
 
 
@@ -58,85 +60,114 @@
 	</div>
 </div>
 
-<div class="container">
-	<div class="row" style="background: linear-gradient(-185deg,rgba(245,245,245,1) 50%,#fff 50%);">
-		<div class="col-md-4" style="height: 400px; background-color:blueviolet;">
+<ol class="breadcrumb">
+	<li><a href="#">Home</a></li>
+	<li><a href="#">Library</a></li>
+	<li class="active">Data</li>
+</ol>
 
-		</div>
-		<a href="#">
-			<div class="col-xs-6 col-md-6">
-				<div class="media">
-					<div class="media-left media-middle">
-						<img class="media-object" src="../static/img/computer.png" alt="...">
+<div class="recommended_service_block">
+	<div class="container">
+		<h1 class="blog-post-title text-center">推荐服务</h1>
+
+		<!-- Three columns of text below the carousel -->
+		<div class="row recommended_service_items">
+			<li class="col-md-3">
+				<a>
+					<div class="recommended_service_item ">
+						<img class="" src="../static/img/驻场服务.png" alt="Generic placeholder image" width="64" height="64">
+						<h2>驻场服务</h2>
+						<p>按照IT工作量选择工程师驻场服务时间, 人员稳定</p>
 					</div>
-					<div class="media-body">
-						<h3 class="media-heading">IT外包</h3>
-						<hr class="featurette-divider">
-						<p>企业IT外包服务、电脑维护、远程服务、到场服务、驻场服务</p>
+				</a>
+			</li>
+			<li class="col-md-3">
+				<a>
+					<div class="recommended_service_item ">
+						<img class="" src="../static/img/机房.png" alt="Generic placeholder image" width="64" height="64">
+						<h2>机房建设</h2>
+						<p>我们的团队集建筑、电气、机电安装、网络构建等多个专业技术于一体，拥有丰富的工程实施和管理经验</p>
 					</div>
-				</div>
-			</div>
-		</a>
+				</a>
+			</li>
+			<li class="col-md-3">
+				<a>
+					<div class="recommended_service_item ">
+						<img class="" src="../static/img/作业报警.png" alt="Generic placeholder image" width="64" height="64">
+						<h2>防盗报警</h2>
+						<p>设备一般分为：前端探测器，报警控制器。报警控制器是一台主机（如电脑的主机一样）</p>
+					</div>
+				</a>
+			</li>
+			<li class="col-md-3">
+				<a>
+					<div class="recommended_service_item ">
+						<img class="" src="../static/img/jiankong.png" alt="Generic placeholder image" width="64" height="64">
+						<h2>视频监控</h2>
+						<p>由从业多年的方案设计专家，为您量身打造精准、专业、智能的监控解决方案</p>
+					</div>
+				</a>
+			</li>
+			<li class="col-md-3">
+				<a>
+					<div class="recommended_service_item ">
+						<img class="" src="../static/img/buxian.png" alt="Generic placeholder image" width="64" height="64">
+						<h2>综合布线</h2>
+						<p>在新办公室装修、老办公室整理时, 我们提供定制化的方案、实惠的价格及标准化施工</p>
+					</div>
+				</a>
+			</li>
+			<li class="col-md-3">
+				<a>
+					<div class="recommended_service_item ">
+						<img class="" src="../static/img/network.png" alt="Generic placeholder image" width="64" height="64">
+						<h2>网络改造</h2>
+						<p>为客户提供网络环境重新搭建、设备升级等项目实施，为业务系统健康运行提供保障</p>
+					</div>
+				</a>
+			</li>
+			<li class="col-md-3">
+				<a>
+					<div class="recommended_service_item ">
+						<img class="" src="../static/img/邮件.png" alt="Generic placeholder image" width="64" height="64">
+						<h2>邮件服务器</h2>
+						<p>提供从邮件系统选型咨询、搭建部署到后期运维支持的“一站式”解决方案</p>
+					</div>
+				</a>
+			</li>
+			<li class="col-md-3">
+					<a href="/service">
+						<div class="recommended_service_item ">
+							<img class="" src="../static/img/more.png" alt="Generic placeholder image" width="64" height="64">
+							<h2>more</h2> 
+							<p>查看更多</p>
+						</div>
+					</a>
+				</li>
+
+		</div><!-- /.row -->
 
 	</div>
 </div>
 
-<div class="container marketing">
-	<br><br>
-	<h1 class="blog-post-title text-center">推荐服务</h1>
-	<br><br>
-	<!-- Three columns of text below the carousel -->
-	<div class="row">
-		<div class="col-md-4" style="background-color:brown;"> 
-			<img class="" src="../static/img/computer.png" alt="Generic placeholder image" width="64" height="64">
-			<h2>IT外包</h2>
-			<p>提供企业IT外包服务、电脑维护、远程服务、到场服务、驻场服务</p>
-		</div><!-- /.col-md-4 -->
-		<div class="col-md-4">
-			<img src="../static/img/network.png" alt="Generic placeholder image">
-			<h2>网络设备</h2>
-			<p>路由器、防火墙、交换机、无线设备安装调试维护、检测维修</p>
-		</div><!-- /.col-md-4 -->
-		<div class="col-md-4">
-			<img src="../static/img/server.png" alt="Generic placeholder image">
-			<h2>服务器</h2>
-			<p>服务器系统安装、服务器上机架、硬盘、内存等安装</p>
-		</div><!-- /.col-md-4 -->
-		<div class="col-md-4">
-			<img class="" src="../static/img/buxian.png" alt="Generic placeholder image" width="64" height="64">
-			<h2>综合布线</h2>
-			<p>管道预埋、线缆铺设、机柜安装、端口标签、线缆测试</p>
-		</div><!-- /.col-md-4 -->
-		<div class="col-md-4">
-			<img src="../static/img/menjin.png" alt="Generic placeholder image">
-			<h2>门禁系统</h2>
-			<p>门禁安装服务、现场勘测、产品选型、图纸设计、故障检测</p>
-		</div><!-- /.col-md-4 -->
-		<div class="col-md-4">
-			<img src="../static/img/jiankong.png" alt="Generic placeholder image">
-			<h2>监控设备</h2>
-			<p>摄像头布线安装调试、故障检测、监控设备解决方案</p>
-		</div><!-- /.col-md-4 -->
-	</div><!-- /.row -->
 
 
+<hr class="featurette-divider">
 
-	<hr class="featurette-divider">
-
-	<div class="row featurette">
-		<div class="col-md-7">
-			<h1 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h1>
-			<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-				euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus
-				ac cursus commodo.</p>
-		</div>
-		<div class="col-md-5">
-			<img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="../static/img/u8.jpg"
-			 data-holder-rendered="true">
-		</div>
+<div class="row featurette">
+	<div class="col-md-7">
+		<h1 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h1>
+		<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
+			euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus
+			ac cursus commodo.</p>
 	</div>
+	<div class="col-md-5">
+		<img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="../static/img/u8.jpg"
+		 data-holder-rendered="true">
+	</div>
+</div>
 
-	<hr class="featurette-divider">
+<hr class="featurette-divider">
 
 </div>
 
