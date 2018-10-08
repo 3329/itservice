@@ -17,7 +17,6 @@ a {
 
 
 
-
 .wrap {
     margin: 0 auto; 
     height: 100%;
@@ -127,5 +126,21 @@ a {
     float: left;
     margin-left: 20px;
 }
+
+
+
+.recommended_service_block {
+	background-color:#f5f5f5;
+	background-image: url(../img/bkgd.png); 
+	padding: 80px 0; 
+}
+
+.featurette {   
+	margin: 40 0; 
+	line-height: 1.9; 
+	font-size: 16px; 
+}
+
+
 
 

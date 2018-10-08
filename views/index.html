@@ -22,7 +22,7 @@
 
 /* Center align the text within the three columns below the carousel */
 .recommended_service_block {
-	background-color:whitesmoke;
+	background-color:#f5f5f5;
 	background-image: url(../static/img/bkgd.png); 
 	padding: 50px 0; 
 }
@@ -40,8 +40,15 @@
 	background-color: #e6e6e6;
 }
 
+.featurette {
+	margin: 40px 0; 
+	line-height: 1.9; 
+	font-size: 16px; 
+}
+
+
 a {
-	color: black;
+	color: black; 
 }
 </style>
 
@@ -60,11 +67,14 @@ a {
 	</div>
 </div>
 
+<!--
 <ol class="breadcrumb">
 	<li><a href="#">Home</a></li>
 	<li><a href="#">Library</a></li>
 	<li class="active">Data</li>
 </ol>
+-->
+
 
 <div class="recommended_service_block">
 	<div class="container">
@@ -73,7 +83,7 @@ a {
 		<!-- Three columns of text below the carousel -->
 		<div class="row recommended_service_items">
 			<li class="col-md-3">
-				<a>
+				<a href="/zhuchang">
 					<div class="recommended_service_item ">
 						<img class="" src="../static/img/驻场服务.png" alt="Generic placeholder image" width="64" height="64">
 						<h2>驻场服务</h2>
@@ -136,14 +146,14 @@ a {
 				</a>
 			</li>
 			<li class="col-md-3">
-					<a href="/service">
-						<div class="recommended_service_item ">
-							<img class="" src="../static/img/more.png" alt="Generic placeholder image" width="64" height="64">
-							<h2>more</h2> 
-							<p>查看更多</p>
-						</div>
-					</a>
-				</li>
+				<a href="/service">
+					<div class="recommended_service_item ">
+						<img class="" src="../static/img/more.png" alt="Generic placeholder image" width="64" height="64">
+						<h2>more</h2>
+						<p>查看更多</p>
+					</div>
+				</a>
+			</li>
 
 		</div><!-- /.row -->
 
@@ -151,29 +161,139 @@ a {
 </div>
 
 
+<div class="recommended_service_block" style="background: #fff;">
+	<div class="container">
+		<h1 class="blog-post-title text-center">我们可以为您解决什么</h1>
+		<hr class="featurette-divider">
 
-<hr class="featurette-divider">
+		<div class="row featurette">
+			<div class="col-md-8">
+				<h2 class="featurette-heading">IT即时下单服务</h2>
+				<h3 class="featurette-heading"><span class="text-muted">最快10秒响应、1小时上门</span></h3>
+				<p class="lead1111">E客IT服务平台已实现集WEB页面、微信、APP端，兼容IOS及Android的多端口即时下单功能，
+					为客户突发、紧急的IT维修需求提供极速的响应和快速的IT上门服务。
+					同时，平台上还具备7*24小时自动下单功能，客户可随时随地报修下单，客服将以最快速度给予反馈。</p>
+			</div>
+			<div class="col-md-4">
+				<img class="featurette-image img-responsive center-block" src="../static/img/u8.jpg" height="300">
+			</div>
+		</div>
 
-<div class="row featurette">
-	<div class="col-md-7">
-		<h1 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h1>
-		<p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-			euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus
-			ac cursus commodo.</p>
+		<hr class="featurette-divider">
+		<div class="row featurette">
+			<div class="col-md-4">
+				<img class="featurette-image img-responsive center-block" src="../static/img/u8.jpg" height="300">
+			</div>
+			<div class="col-md-8">
+				<h2 class="featurette-heading">项目实施</h2>
+				<h3 class="featurette-heading"><span class="text-muted">网络工程，设备升级，技术整改</span></h3>
+				<p class="lead111">多年来，我们累积了丰富的多地区、并发量大的IT项目实施经验，
+					为众多商城及连锁门店成功搭建网络工程和企业IT基础架构，从结构，系统，服务，
+					管理四个方面提供一个成本合理、以及高效、安全的企业IT环境，
+					通过模块化的、灵活性的、可靠性极高的布线网络和高效快速地上门维护服务，
+					使得整个企业信息系统稳定可靠地运行，保证各类信息通讯畅通无阻。</p>
+			</div>
+		</div>
+
+		<hr class="featurette-divider">
+		<div class="row featurette">
+			<div class="col-md-8">
+				<h2 class="featurette-heading">售后技术服务</h2>
+				<h3 class="featurette-heading"><span class="text-muted">覆盖全国，标准规范，价格透明</span></h3>
+				<p class="lead111">在E客平台上，（E客）已在全国范围内拥有注册工程师超过15000名，可以为各大企业的全国性、突发性IT维护提供专业、
+					及时的技术支持，平台上标准规范的IT服务内容包括电脑、服务器、网络设备、
+					监控系统、无线网络、POS系统、办公设备等的上门售后安装维护，及调试、定期巡检、验收等综合IT技术服务。</p>
+			</div>
+			<div class="col-md-4">
+				<img class="featurette-image img-responsive center-block" src="../static/img/u8.jpg" height="300">
+			</div>
+		</div>
 	</div>
-	<div class="col-md-5">
-		<img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="500x500" src="../static/img/u8.jpg"
-		 data-holder-rendered="true">
+
+	<!-- 我们的优势是什么 start -->
+	<div class="recommended_service_block">
+		<div class="container">
+			<h1 class="blog-post-title text-center">我们的优势是什么</h1>
+			<hr class="featurette-divider">
+
+			<div class="row featurette">
+				<div class="col-md-8">
+					<h2 class="featurette-heading">IT即时下单服务</h2>
+					<h3 class="featurette-heading"><span class="text-muted">最快10秒响应、1小时上门</span></h3>
+					<p class="lead111">E客IT服务平台已实现集WEB页面、微信、APP端，兼容IOS及Android的多端口即时下单功能，
+						为客户突发、紧急的IT维修需求提供极速的响应和快速的IT上门服务。
+						同时，平台上还具备7*24小时自动下单功能，客户可随时随地报修下单，客服将以最快速度给予反馈。</p>
+				</div>
+				<div class="col-md-4">
+					<img class="featurette-image img-responsive center-block" src="../static/img/u8.jpg" height="300">
+				</div>
+			</div>
+
+			<hr class="featurette-divider">
+			<div class="row featurette">
+				<div class="col-md-4">
+					<img class="featurette-image img-responsive center-block" src="../static/img/u8.jpg" height="300">
+				</div>
+				<div class="col-md-8">
+					<h2 class="featurette-heading">项目实施</h2>
+					<h3 class="featurette-heading"><span class="text-muted">网络工程，设备升级，技术整改</span></h3>
+					<p class="lead111">多年来，我们累积了丰富的多地区、并发量大的IT项目实施经验，
+						为众多商城及连锁门店成功搭建网络工程和企业IT基础架构，从结构，系统，服务，
+						管理四个方面提供一个成本合理、以及高效、安全的企业IT环境，
+						通过模块化的、灵活性的、可靠性极高的布线网络和高效快速地上门维护服务，
+						使得整个企业信息系统稳定可靠地运行，保证各类信息通讯畅通无阻。</p>
+				</div>
+			</div>
+
+			<hr class="featurette-divider">
+			<div class="row featurette">
+				<div class="col-md-8">
+					<h2 class="featurette-heading">售后技术服务</span></h2>
+					<h3 class="featurette-heading"><span class="text-muted">覆盖全国，标准规范，价格透明</span></h3>
+					<p class="lead111">在E客平台上，（E客）已在全国范围内拥有注册工程师超过15000名，可以为各大企业的全国性、突发性IT维护提供专业、
+						及时的技术支持，平台上标准规范的IT服务内容包括电脑、服务器、网络设备、
+						监控系统、无线网络、POS系统、办公设备等的上门售后安装维护，及调试、定期巡检、验收等综合IT技术服务。</p>
+				</div>
+				<div class="col-md-4">
+					<img class="featurette-image img-responsive center-block" src="../static/img/u8.jpg" height="300">
+				</div>
+			</div>
+		</div> <!-- 我们的优势是什么 end -->
+
+
+
+		<div class="recommended_service_block" style="background:aliceblue;">
+			<div class="container">
+				<h1 class="blog-post-title text-center">联系我们</h1>
+				<h3 class="text-center">欢迎您来电咨询，我们将竭诚为您服务！</h3>
+				<hr class="featurette-divider">
+				<h4 class="text-center">您可以通过电话、Email和在线聊天快速联系我们，我们的工作时间是周一至周五早9点至晚18点。</h4>
+
+				<div class="row">
+					<div class="col-md-4"><span>上海市静安区南京西路580号仲益大厦12F</span></div>
+					<div class="col-md-4"><span>+86 21 50343890</span></div>
+					<div class="col-md-4"><span>service@itsr.com</span></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="recommended_service_block" style="background: #fff;">
+			<div class="container">
+				<h1 class="blog-post-title text-center">合作伙伴 </h1>
+				<h3 class="text-center">我们期待与您的合作！</h3>
+				<hr class="featurette-divider">
+				<div>
+					<img src="../static/img/hezuohb.jpg" alt="">
+				</div>
+			</div>
+		</div>
+
+
 	</div>
-</div>
-
-<hr class="featurette-divider">
-
-</div>
 
 
 
-<script type="text/javascript">
-	$(".m-current-nav-item").removeClass("m-current-nav-item");
-	$("#index").addClass("m-current-nav-item");
-</script>
+	<script type="text/javascript">
+		$(".m-current-nav-item").removeClass("m-current-nav-item");
+		$("#index").addClass("m-current-nav-item");
+	</script>
