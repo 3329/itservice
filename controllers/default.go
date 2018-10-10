@@ -124,7 +124,20 @@ func (c *MainController) ProcPageBuxian() {
 	PlanItemsMap = map[int]string{}
 	PlanItemsMap[0] = "我们通过专业的软件（Teamviewer）为用户提供快速、安全、稳定的远程服务（5分钟内相应）。" 
 	c.Data["PlanItemsMap"] = PlanItemsMap 
+} 
+
+func (c *MainController) ProcPageJifangjianshe() {
+	c.Layout = "layout.html"
+	c.TplName = "ruodian.html"
+
+	c.Data["CrtTitle"] = "综合布线"
+
+	var PlanItemsMap map[int]string 
+	PlanItemsMap = map[int]string{}
+	PlanItemsMap[0] = "我们通过专业的软件（Teamviewer）为用户提供快速、安全、稳定的远程服务（5分钟内相应）。" 
+	c.Data["PlanItemsMap"] = PlanItemsMap 
 }
+
 // -------------------------RuoDian Page end-------------------------------------------
 
 

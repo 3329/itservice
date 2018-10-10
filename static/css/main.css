@@ -1,5 +1,5 @@
 body {
-	font-family: Georgia, "Times New Roman", Times, serif;
+	font-family: monospace, fantasy, Georgia, "Times New Roman", Times, serif;
 	min-width: 1200px;
 	padding-top: 80px;
 	/* background-color: #f3f5f6; */
@@ -117,9 +117,9 @@ a {
 
 .recommended_service_block {
 	background-color: #f5f5f5;
-	background-image: url(../img/b6.png); 
+	background-image: url(../img/b6.png);
 	background-repeat: no-repeat;
-	background-size: 100% 100%; 
+	background-size: 100% 100%;
 	padding: 90px 0;
 }
 

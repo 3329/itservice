@@ -26,7 +26,7 @@
 		</div>
 		<div class="col-md-8">
 			<h2 class="featurette-heading">我们的方案：</h2>
-			<p class="">{{.PlanDesc}}</p>
+			<p>{{.PlanDesc}}</p>
 			<ol>
 				{{range $index, $elem := .PlanItemsMap}}
 				<li>{{$elem}} </li>
@@ -66,3 +66,4 @@
 	$(".m-current-nav-item").removeClass("m-current-nav-item");
 	$("#service").addClass("m-current-nav-item");
 </script>
+
