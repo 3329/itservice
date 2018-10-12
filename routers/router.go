@@ -20,5 +20,28 @@ func init() {
 	beego.Router("/yuanchen", &controllers.MainController{}, "*:ProcPageYuanchen")
 
 	// -------------------------RuoDian---------------------------------
+	beego.Router("/buxian", &controllers.MainController{}, "*:ProcPageBuxian") 
+	beego.Router("/jifangjianshe", &controllers.MainController{}, "*:ProcPageJifangjianshe")
+	beego.Router("/menjinkaoqing", &controllers.MainController{}, "*:ProcPageMenjinkaoqing")
 	beego.Router("/buxian", &controllers.MainController{}, "*:ProcPageBuxian")
+	beego.Router("/buxian", &controllers.MainController{}, "*:ProcPageBuxian")
+	beego.Router("/buxian", &controllers.MainController{}, "*:ProcPageBuxian")
+	beego.Router("/buxian", &controllers.MainController{}, "*:ProcPageBuxian")
+	beego.Router("/buxian", &controllers.MainController{}, "*:ProcPageBuxian")
+	beego.Router("/buxian", &controllers.MainController{}, "*:ProcPageBuxian")
+	beego.Router("/buxian", &controllers.MainController{}, "*:ProcPageBuxian")
+	beego.Router("/buxian", &controllers.MainController{}, "*:ProcPageBuxian")
+	beego.Router("/buxian", &controllers.MainController{}, "*:ProcPageBuxian")
+	beego.Router("/buxian", &controllers.MainController{}, "*:ProcPageBuxian")
+	beego.Router("/buxian", &controllers.MainController{}, "*:ProcPageBuxian")
+	beego.Router("/buxian", &controllers.MainController{}, "*:ProcPageBuxian")
+	beego.Router("/buxian", &controllers.MainController{}, "*:ProcPageBuxian")
+	beego.Router("/buxian", &controllers.MainController{}, "*:ProcPageBuxian")
+	beego.Router("/buxian", &controllers.MainController{}, "*:ProcPageBuxian")
+	beego.Router("/buxian", &controllers.MainController{}, "*:ProcPageBuxian")
+	beego.Router("/buxian", &controllers.MainController{}, "*:ProcPageBuxian")
+	beego.Router("/buxian", &controllers.MainController{}, "*:ProcPageBuxian")
+	beego.Router("/buxian", &controllers.MainController{}, "*:ProcPageBuxian")
+	beego.Router("/buxian", &controllers.MainController{}, "*:ProcPageBuxian")
+
 }

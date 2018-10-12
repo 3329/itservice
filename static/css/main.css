@@ -1,8 +1,12 @@
 body {
-	font-family: monospace, fantasy, Georgia, "Times New Roman", Times, serif;
+	font-family: fantasy, monospace, Georgia, SimHei, serif, Times, Timesroma, "Times New Roman";
 	min-width: 1200px;
 	padding-top: 80px;
-	/* background-color: #f3f5f6; */
+
+	/*background-image: url(../img/b2.jpg);  */
+	background-image: url(../img/b6.png);  
+	background-repeat: no-repeat; 
+	background-size: 100% 100%;
 }
 
 div {
@@ -27,7 +31,7 @@ a {
 .m-huge-banner {
 	height: 200px;
 	/* background-image: url(../img/machine1.png); */
-	background-image: url(../img/v5.png);
+	background-image: url(../img/v51.png);
 	/* background-image: url(../img/iBanner.jpg);  */
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
@@ -77,12 +81,14 @@ a {
 	background-image: url(../img/hhh.jpg);
 	background-repeat: no-repeat;
 	background-size: 100% auto;
-	background-position: 50% 0;
+	background-position: 50% 0; 
+
+	font-family: monospace, fantasy, Georgia, SimHei, serif, Times, Timesroma, "Times New Roman";
 }
 
 .navbar-nav>li>a {
 	color: #fff;
-	font-size: 18px;
+	font-size: 18px; 
 	font-weight: bold;
 	line-height: 50px;
 }
@@ -115,7 +121,7 @@ a {
 
 
 
-.recommended_service_block {
+.recommended_service_block { 
 	background-color: #f5f5f5;
 	background-image: url(../img/b6.png);
 	background-repeat: no-repeat;
@@ -126,5 +132,5 @@ a {
 .featurette {
 	margin: 60px 0;
 	line-height: 1.4;
-	font-size: 16px;
+	font-size: 15px;
 }

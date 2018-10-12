@@ -1,44 +1,23 @@
-<style>
-	.trouble-block {
-		padding: 50px 0; 
-	} 
-</style>
-
-
 <div class="m-huge-banner w-full wrap">
 	<div class="m-huge-title text-center">弱电工程&emsp;之&emsp;{{.CrtTitle}}</div>
 </div>
 
 <div class="container">
-	<div class="row featurette trouble-block">
-		<h2 class="text-center">{{.CrtTitle}}工程是否一直被以下问题困扰？</h2>
-		<div class="col-md-2">
-			<img src="../static/img/trouble.gif11" alt="" class="img-thumbnail"> 
-		</div>
-		<div class="col-md-8"> 
-			<table class="table table-bordered11 table-hover">
-				<thead>
-					<tr>
-						<th colspan="2" class="lead text-center ">TROUBLED</th>
-					</tr>
-				</thead>
-				<tbody> 
-					{{range $name, $value := .TroubleItems}} 
-					<tr> 
-						<td class="text-warning">{{$name}}</i></td>
-						<td>&emsp;{{$value}}</td> 
-					</tr> 
-					{{end}} 
-				</tbody>
-			</table> 
-		</div> 
-	</div> 
 
 
 	<div class="row">
 		<div class="page-header">
-			<h3 class="text-center">{{.CrtTitle}}</h3>
+			<h2 class="text-center">{{.CrtTitle}}</h2>	
 			<p class="text-justify">{{.TitleDesc}}</p>
+		</div>
+
+		<div>
+			{{range $name, $value := .CompriseItems}}
+			<h3>{{$name}}</h3>
+			<blockquote>
+				<p>{{$value}}</p>
+			</blockquote>
+			{{end}}
 		</div>
 
 
@@ -54,7 +33,7 @@
 					<td class="bg-danger">{{$name}}</td>
 					<td class="bg-warning">{{$value}}</td>
 				</tr>
-				{{end}} 
+				{{end}}
 			</tbody>
 		</table>
 
@@ -108,5 +87,3 @@
 	$(".m-current-nav-item").removeClass("m-current-nav-item");
 	$("#service").addClass("m-current-nav-item");
 </script>
-
-
