@@ -1,12 +1,7 @@
 body {
 	font-family: fantasy, monospace, Georgia, SimHei, serif, Times, Timesroma, "Times New Roman";
 	min-width: 1200px;
-	padding-top: 80px;
-
-	/*background-image: url(../img/b2.jpg);  */
-	background-image: url(../img/b6.png);  
-	background-repeat: no-repeat; 
-	background-size: 100% 100%;
+	padding-top: 85px;
 }
 
 div {
@@ -78,10 +73,10 @@ a {
     background-position: 50% 30%;
     padding: 15px 0; */
 
-	background-image: url(../img/hhh.jpg);
+	background-image: url(../img/hhh.jpg); 
 	background-repeat: no-repeat;
-	background-size: 100% auto;
-	background-position: 50% 0; 
+	background-size: 100% auto; 
+	background-position: 50% 0;  
 
 	font-family: monospace, fantasy, Georgia, SimHei, serif, Times, Timesroma, "Times New Roman";
 }
@@ -123,7 +118,8 @@ a {
 
 .recommended_service_block { 
 	background-color: #f5f5f5;
-	background-image: url(../img/b6.png);
+	background-image: url(../img/b6.png); 
+	background-image: url(../img/b1.png); 
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	padding: 90px 0;

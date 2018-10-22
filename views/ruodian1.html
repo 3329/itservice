@@ -1,3 +1,12 @@
+<style>
+	.m-comprise-block {
+		background-image: url(../static/img/t61.jpg); 
+		background-repeat: no-repeat; 
+		background-size: 100% 100%;
+		padding: 50px; 
+	}
+</style>
+
 <div class="m-huge-banner w-full wrap">
 	<div class="m-huge-title text-center">弱电工程&emsp;之&emsp;{{.CrtTitle}}</div>
 </div>
@@ -7,16 +16,25 @@
 
 	<div class="row">
 		<div class="page-header">
-			<h2 class="text-center">{{.CrtTitle}}</h2>	
-			<p class="text-justify">{{.TitleDesc}}</p>
+			<h2 class="text-center">{{.CrtTitle}}</h2>
+			<p class="text-justify">{{.TitleDesc}}</p> 
 		</div>
 
+		<!-- 系统组成 -->
 		<div>
 			{{range $name, $value := .CompriseItems}}
 			<h3>{{$name}}</h3>
 			<blockquote>
 				<p>{{$value}}</p>
 			</blockquote>
+			{{end}}
+		</div>
+
+		<!-- 包含功能 -->
+		<div class="m-comprise-block">
+			{{range $name, $value := .FunctionItems}}
+			<h3>{{$name}}</h3>
+			<p class="text-justify">{{$value}}</p>
 			{{end}}
 		</div>
 
