@@ -1,7 +1,7 @@
 body {
 	font-family: fantasy, monospace, Georgia, SimHei, serif, Times, Timesroma, "Times New Roman";
 	min-width: 1200px;
-	padding-top: 85px;
+	padding-top: 82px;
 }
 
 div {
@@ -25,8 +25,8 @@ a {
 
 .m-huge-banner {
 	height: 200px;
-	/* background-image: url(../img/machine1.png); */
-	background-image: url(../img/v51.png);
+	background-image: url(../img/b6.png); 
+	/* background-image: url(../img/v51.png); */
 	/* background-image: url(../img/iBanner.jpg);  */
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
@@ -95,7 +95,8 @@ a {
 
 .m-footer {
 	background-color: #1a1a1a;
-	color: #ffffff;
+	color: #ffffff; 
+	margin-top: 50px; 
 }
 
 .m-footer-top {

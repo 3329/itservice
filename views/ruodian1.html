@@ -1,9 +1,9 @@
 <style>
-	.m-comprise-block {
+	.content-block {
 		background-image: url(../static/img/t61.jpg); 
 		background-repeat: no-repeat; 
 		background-size: 100% 100%;
-		padding: 50px; 
+		padding: 10px 50px; 
 	}
 </style>
 
@@ -17,85 +17,28 @@
 	<div class="row">
 		<div class="page-header">
 			<h2 class="text-center">{{.CrtTitle}}</h2>
-			<p class="text-justify">{{.TitleDesc}}</p> 
+			<p class="text-justify">{{.TitleDesc}}</p>
 		</div>
 
 		<!-- 系统组成 -->
-		<div>
+		<h3>系统组成：</h3>
+		<div class="content-block">
 			{{range $name, $value := .CompriseItems}}
-			<h3>{{$name}}</h3>
-			<blockquote>
+			<h3>{{$name}}</h3> 
 				<p>{{$value}}</p>
-			</blockquote>
 			{{end}}
 		</div>
 
 		<!-- 包含功能 -->
-		<div class="m-comprise-block">
+		<h3>系统功能：</h3>
+		<div class="content-block">
+			
 			{{range $name, $value := .FunctionItems}}
 			<h3>{{$name}}</h3>
 			<p class="text-justify">{{$value}}</p>
 			{{end}}
 		</div>
-
-
-		<table class="table table-bordered11 table-hover">
-			<thead>
-				<tr>
-					<th colspan="2" class="lead text-center bg-primary">综合布线系统包括六个子系统</th>
-				</tr>
-			</thead>
-			<tbody>
-				{{range $name, $value := .PartsMap}}
-				<tr>
-					<td class="bg-danger">{{$name}}</td>
-					<td class="bg-warning">{{$value}}</td>
-				</tr>
-				{{end}}
-			</tbody>
-		</table>
-
-
-		<div class="media">
-			<div class="media-body">
-				<h4 class="media-heading">综合布线系统包括六个子系统：</h4>
-				<p>综合布线系统一个能够支持任何用户选择的话音、数据、图形图像应用的电信布线系统。系统应能支持话音、图形、图像、数据多媒体、安全监控、传感等各种信息的传输，支持UTP、光纤、STP、同轴电缆等各种传输载体，支持多用户多类型产品的应用，支持高速网络的应用。</p>
-				<h3 class="media-heading">综合布线系统包括六个子系统：</h3>
-				<p>工作区子系统、水平支干线子系统、管理子系统、垂直主干子系统、设备子系统和建筑群主干子系统。</p>
-			</div>
-			<div class="media-right">
-				<img class="media-object" src="../static/img/u8.jpg" alt="..." width="300" height="300">
-			</div>
-		</div>
-
 	</div> <!-- row end -->
-
-	<div class="row">
-		<div class="col-xs-4 col-md-2">
-			<h1 class="text-center" style="color:gold;">01</h1>
-			<p>综合布线系统一个能够支持任何用户选择的话音、数据、图形图像应用的电信布线系统。系统应能支持话音、图形、图像、数据多媒体、安全监控、传感等各种信息的传输，支持UTP、光纤、STP、同轴电缆等各种传输载体，支持多用户多类型产品的应用，支持高速网络的应用。</p>
-		</div>
-		<div class="col-xs-4 col-md-2">
-			<h1 class="text-center" style="color:gold;">02</h1>
-			<p>综合布线系统一个能够支持任何用户选择的话音、数据、图形图像应用的电信布线系统。系统应能支持话音、图形、图像、数据多媒体、安全监控、传感等各种信息的传输，支持UTP、光纤、STP、同轴电缆等各种传输载体，支持多用户多类型产品的应用，支持高速网络的应用。</p>
-		</div>
-		<div class="col-xs-4 col-md-2">
-			<h1 class="text-center" style="color:gold;">03</h1>
-			<p>综合布线系统一个能够支持任何用户选择的话音、数据、图形图像应用的电信布线系统。系统应能支持话音、图形、图像、数据多媒体、安全监控、传感等各种信息的传输，支持UTP、光纤、STP、同轴电缆等各种传输载体，支持多用户多类型产品的应用，支持高速网络的应用。</p>
-		</div>
-		<div class="col-xs-4 col-md-2">
-			<h1 class="text-center" style="color:gold;">04</h1>
-			<p>综合布线系统一个能够支持任何用户选择的话音、数据、图形图像应用的电信布线系统。系统应能支持话音、图形、图像、数据多媒体、安全监控、传感等各种信息的传输，支持UTP、光纤、STP、同轴电缆等各种传输载体，支持多用户多类型产品的应用，支持高速网络的应用。</p>
-		</div>
-		<div class="col-xs-4 col-md-2">
-			<h1 class="text-center" style="color:gold;">05</h1>
-			<p>综合布线系统一个能够支持任何用户选择的话音、数据、图形图像应用的电信布线系统。系统应能支持话音、图形、图像、数据多媒体、安全监控、传感等各种信息的传输，支持UTP、光纤、STP、同轴电缆等各种传输载体，支持多用户多类型产品的应用，支持高速网络的应用。</p>
-		</div>
-		<div class="col-xs-4 col-md-2">
-			<h1 class="text-center" style="color:gold;">06</h1>
-			<p>综合布线系统一个能够支持任何用户选择的话音、数据、图形图像应用的电信布线系统。系统应能支持话音、图形、图像、数据多媒体、安全监控、传感等各种信息的传输，支持UTP、光纤、STP、同轴电缆等各种传输载体，支持多用户多类型产品的应用，支持高速网络的应用。</p>
-		</div>
-	</div>
 
 </div> <!-- container end -->
 
@@ -105,3 +48,4 @@
 	$(".m-current-nav-item").removeClass("m-current-nav-item");
 	$("#service").addClass("m-current-nav-item");
 </script>
+
