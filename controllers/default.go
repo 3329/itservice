@@ -302,9 +302,8 @@ func (c *MainController) ProcPagePinjieping() {
 // ------------------------- XiTongJiChen Page start -------------------------------------------
 
 func (c *MainController) ProcPageWangluogaizhao() { 
-
+	
 }
-
 
 // ------------------------- XiTongJiChen Page end -------------------------------------------
 
