@@ -34,16 +34,18 @@ func init() {
 
 	// ------------------------- XiTongJiChen start---------------------------------
 	beego.Router("/wangluogaizhao", &controllers.MainController{}, "*:ProcPageWangluogaizhao")
-	beego.Router("/buxian", &controllers.MainController{}, "*:ProcPageBuxian")
-	beego.Router("/buxian", &controllers.MainController{}, "*:ProcPageBuxian")
-	beego.Router("/buxian", &controllers.MainController{}, "*:ProcPageBuxian")
-	beego.Router("/buxian", &controllers.MainController{}, "*:ProcPageBuxian")
-	beego.Router("/buxian", &controllers.MainController{}, "*:ProcPageBuxian")
-	beego.Router("/buxian", &controllers.MainController{}, "*:ProcPageBuxian")
-	beego.Router("/buxian", &controllers.MainController{}, "*:ProcPageBuxian")
-	beego.Router("/buxian", &controllers.MainController{}, "*:ProcPageBuxian")
-	beego.Router("/buxian", &controllers.MainController{}, "*:ProcPageBuxian")
-	beego.Router("/buxian", &controllers.MainController{}, "*:ProcPageBuxian")
+	beego.Router("/wuxianfugai", &controllers.MainController{}, "*:ProcPageWuxianfugai")
+	beego.Router("/fangwenkongzhi", &controllers.MainController{}, "*:ProcPageFangwenkongzhi")
+	beego.Router("/shangwangguanli", &controllers.MainController{}, "*:ProcPageShangwangguanli")
+	beego.Router("/fwqxulihua", &controllers.MainController{}, "*:ProcPageFwqxulihua")
+	beego.Router("/zuomianxulihua", &controllers.MainController{}, "*:ProcPageZuomianxulihua")
+
+	beego.Router("/vpnservice", &controllers.MainController{}, "*:ProcPageVpnservice")
+	beego.Router("/databackup", &controllers.MainController{}, "*:ProcPageDatabackup")
+	beego.Router("/emailserver", &controllers.MainController{}, "*:ProcPageEmailserver")
+	beego.Router("/fileshare", &controllers.MainController{}, "*:ProcPageFileshare")
+	beego.Router("/serverloadbalance", &controllers.MainController{}, "*:ProcPageServerLoadBalance")
+
 	beego.Router("/buxian", &controllers.MainController{}, "*:ProcPageBuxian")
 	beego.Router("/buxian", &controllers.MainController{}, "*:ProcPageBuxian")
 	beego.Router("/buxian", &controllers.MainController{}, "*:ProcPageBuxian")

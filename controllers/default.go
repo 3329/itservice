@@ -305,6 +305,48 @@ func (c *MainController) ProcPageWangluogaizhao() {
 	
 }
 
+func (c *MainController) ProcPageWuxianfugai() { 
+	
+}
+
+func (c *MainController) ProcPageFangwenkongzhi() { 
+	
+}
+
+func (c *MainController) ProcPageShangwangguanli() { 
+	
+}
+
+func (c *MainController) ProcPageFwqxulihua() { 
+	
+}
+
+func (c *MainController) ProcPageZuomianxulihua() { 
+	
+}
+
+func (c *MainController) ProcPageVpnservice() { 
+	
+}
+
+func (c *MainController) ProcPageDatabackup() { 
+	
+}
+
+func (c *MainController) ProcPageEmailserver() { 
+	
+}
+
+func (c *MainController) ProcPageFileshare() { 
+	
+}
+
+func (c *MainController) ProcPageServerLoadBalance() { 
+	
+}
+
+
+
 // ------------------------- XiTongJiChen Page end -------------------------------------------
 
 
