@@ -302,11 +302,27 @@ func (c *MainController) ProcPagePinjieping() {
 // ------------------------- XiTongJiChen Page start -------------------------------------------
 
 func (c *MainController) ProcPageWangluogaizhao() { 
-	
+	c.Layout = "layout.html" 
+	c.TplName = "xitongjicheng.html"
+
+	var CompriseItems, FunctionItems map[string]string 
+	CompriseItems = map[string]string{} 
+	FunctionItems = map[string]string{} 
+	CompriseItems["“一体化”体系结构："] = "我们通过结构化的综合布线系统和计算机网络技术，将各个分离的设备(如个人电脑)、功能和信息等集成到相互关联的、统一和协调的系统之中，使资源达到充分共享，实现集中、高效、便利的管理。系统集成采用功能集成、BSV液晶拼接集成、综合布线、网络集成、软件界面集成等多种集成技术。系统集成实现的关键在于解决系统之间的互连和互操作性问题，它是一个多厂商、多协议和面向各种应用的体系结构。这需要解决各类设备、子系统间的接口、协议、系统平台、应用软件等与子系统、建筑环境、施工配合、组织管理和人员配备相关的一切面向集成的问题。"
+	CompriseItems["先进的1+X结构："] = "业界先进的“1+X”体系结构，完全支持一个总部，多个分部的管理模式，让管理不再受地域限制。数字化一卡通的终端设备拥有基于一个硬件平台的多个应用程序的功能，数字化一卡通的软件采用1个管理平台加若干（X）个应用子系统的设计模式，充分地体现了平台化的设计理念。"
+	CompriseItems["科学的“无关性”设计"] = "业界领先目前先进的“无关性”设计技术，突现了开发性、扩展性和适应性，使得用户单位具有更好的选择权和使用权。无关性”主要表现在以下五个方面：数据平台无关性：支持多种操作平台（Unix、Linux、Windows），保障用户的投资；软件接入无关性：支持多种技术体系的应用软件接入；网络形式无关性：支持TCP/IP、485总线/星型、拨号等多种通信方式；	终端厂家无关性：支持多种厂家终端设备；卡片类型无关性：支持非接触式逻辑加密卡（如Mifare One S50、S70，复旦微电子、清华微电子等多卡种）；支持接触式、非接触式CPU卡（如Mifare Pro系列、NTT系列、MOTOROLA系列等多种卡型）；支持二代身份证。"
+
+	FunctionItems["一卡"] = "在同一张卡上实现多种不同功能的智能管理，一张卡上通行很多的设备，而不是不同功能有不同的卡，不同的机在不同的卡上使用。" 
+	FunctionItems["一线"] = "一条线通多种信息，多种不同的设备都挂在一条线上，通过一条线跟PC机一个接口把所有的设备都串起来，进行不同数据的信息交换。"
+	FunctionItems["一库"] = "在同一个软件、同一台PC机上、同一个数据库内、实现卡的发行、卡的注销、卡的报失、卡的资料查询等，准确明了、方便快捷。"
+
+	c.Data["CrtTitle"] = "网络改造" 
+    c.Data["TitleDesc"] = "我们的系统集成（SI，System Integration）服务经过多年经验的累积已经形成了蓝盟独有的方法论，确保了系统集成各模块的有效耦合，达到高性价比的交付。"
+	c.Data["CompriseItems"] = CompriseItems 
+	c.Data["FunctionItems"] = FunctionItems 
 }
 
 func (c *MainController) ProcPageWuxianfugai() { 
-	
 }
 
 func (c *MainController) ProcPageFangwenkongzhi() { 
